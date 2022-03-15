@@ -107,6 +107,7 @@ p{
 }
 
 .intro__subtitle{
+  margin-bottom: 60px;
   font-size: 22px;
   line-height: 1.5;
   font-weight: 400;
@@ -121,6 +122,7 @@ p{
   vertical-align: top;
   border: 0;
   cursor: pointer;
+  text-align: center;
 
   font-family: inherit;
   font-size: 13px;
@@ -132,10 +134,13 @@ p{
 }
 
 .btn--red{
-  margin-top: 60px;
   background-color: #e84545;
   padding: 14px 40px;
   border-radius: 2px;
+}
+
+.btn--long{
+  min-width: 280px;
 }
 
 .btn--red:hover{
@@ -308,7 +313,6 @@ p{
 
 .social__item:hover{
   border: 1px solid #e84545;
-
 }
 
 .social__item:hover .social__icon{
@@ -323,3 +327,81 @@ p{
   fill: #c6cacc;
   transition: fill 0.1s linear;
 }
+
+/*Reviews
+====================*/
+.reviews{
+  overflow: hidden;
+  background-color: #53354a;
+}
+
+.reviews__item{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.reviews__img{
+  width: 50%;
+  position: relative;
+  height: 500px;
+}
+
+.reviews__photo{
+  position: absolute;
+  /*height: inherit;*/
+  /*width: auto;*/
+  top: 50%;
+  /*top: 0;*/
+  right: 0;
+  z-index: 1;
+
+  transform: translateY(-50%);
+}
+
+.reviews__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 80px;
+}
+
+.reviews__text{
+  margin-bottom: 25px;
+  font-family: 'Cardo', sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.reviews__author{
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/*Download
+====================*/
+.download{
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title{
+  font-size: 28px;
+  font-weight: 300;
+  color: #2d3033;
+  margin-bottom: 10px;
+}
+
+.download__subtitle{
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #2d3033;
+  text-transform: uppercase;
+}
+
+
